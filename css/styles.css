@@ -24,9 +24,6 @@ svg {
 }
 
 @keyframes animRotation {
-    0%{
-        transform: rotate(0deg);
-    }
     100% {
         transform: rotate(360deg);
     }
@@ -40,7 +37,20 @@ svg {
     transform-origin: center;
 }
 
+@keyframes animContour {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
 .animContour{
+    animation-name: animContour;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-fill-mode: both;
     stroke: blue;
     stroke-width: 0.3em;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
 }
