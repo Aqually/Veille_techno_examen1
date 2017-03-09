@@ -5,10 +5,14 @@ html, body{
     height: 100vh;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+}
+
 svg{
-    width: 100%;
-    margin: 0 auto;
-    height: 99.7vh;
+    height: 100vh;
+
 }
 
 .cercleRouge{
