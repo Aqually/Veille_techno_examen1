@@ -38,6 +38,6 @@ svg {
     animation-name: animRotation;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     transform-origin: center;
 }
