@@ -6,8 +6,12 @@ html, body {
 }
 
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 svg {
@@ -23,15 +27,31 @@ svg {
     fill: lime;
 }
 
+@-webkit-keyframes animRotation {
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
 @keyframes animRotation {
     100% {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }
 
 .animRotation {
-    animation: animRotation 2.5s linear infinite;
-    transform-origin: center;
+    -webkit-animation: animRotation 2.5s linear infinite;
+            animation: animRotation 2.5s linear infinite;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+}
+
+@-webkit-keyframes animContour {
+    100% {
+        stroke-dashoffset: 1000;
+    }
 }
 
 @keyframes animContour {
@@ -41,7 +61,8 @@ svg {
 }
 
 .animContour{
-    animation: animContour 5s linear infinite;
+    -webkit-animation: animContour 5s linear infinite;
+            animation: animContour 5s linear infinite;
     stroke: blue;
     stroke-width: 0.3em;
     stroke-dasharray: 500;
