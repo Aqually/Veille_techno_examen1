@@ -12,7 +12,7 @@ svg{
 }
 
 .cercleRouge{
-    //stroke: blue;
+    /*stroke: blue;*/
     stroke-width: 0.5em;
     fill: red;
 }
