@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 body {
@@ -11,13 +11,11 @@ body {
 }
 
 svg {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
 .cercleRouge {
-    /*stroke: blue;*/
-    stroke-width: 0.5em;
     fill: red;
 }
 
@@ -35,9 +33,11 @@ svg {
 }
 
 .animRotation {
+    stroke: blue;
+    stroke-width: 0.3em;
     animation-name: animRotation;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-duration: 2s;
+    animation-duration: 3s;
     transform-origin: center;
 }
