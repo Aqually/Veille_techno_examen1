@@ -30,27 +30,20 @@ svg {
 }
 
 .animRotation {
-    animation-name: animRotation;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 2.5s;
+    animation: animRotation 2.5s linear infinite;
     transform-origin: center;
 }
 
 @keyframes animContour {
     100% {
-        stroke-dashoffset: 0;
+        stroke-dashoffset: 1000;
     }
 }
 
 .animContour{
-    animation-name: animContour;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-fill-mode: both;
+    animation: animContour 5s linear infinite;
     stroke: blue;
     stroke-width: 0.3em;
     stroke-dasharray: 500;
-    stroke-dashoffset: 1000;
+    stroke-dashoffset: 0;
 }
