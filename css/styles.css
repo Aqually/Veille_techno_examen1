@@ -1,26 +1,43 @@
-html, body{
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
 }
 
-svg{
+svg {
     height: 100vh;
-
+    width: 100%;
 }
 
-.cercleRouge{
+.cercleRouge {
     /*stroke: blue;*/
     stroke-width: 0.5em;
     fill: red;
 }
 
-.elipseVerte{
+.elipseVerte {
     fill: lime;
+}
+
+@keyframes animRotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animRotation {
+    animation-name: animRotation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    transform-origin: center;
 }
