@@ -33,11 +33,14 @@ svg {
 }
 
 .animRotation {
-    stroke: blue;
-    stroke-width: 0.3em;
     animation-name: animRotation;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-duration: 2.5s;
     transform-origin: center;
+}
+
+.animContour{
+    stroke: blue;
+    stroke-width: 0.3em;
 }
