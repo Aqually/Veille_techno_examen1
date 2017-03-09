@@ -4,11 +4,19 @@
 <head>
     <meta charset="utf-8">
     <title>Marie-Maxime Tanguay -- Examen Volet 1</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
-    <svg height="1000" width="1000">
-        <ellipse cx="200" cy="80" rx="50" ry="50"
+    <svg>
+        <defs>
+            <g id="laForme">
+                <circle class="cercleRouge" cx="90" cy="90" r="50" />
+                <ellipse class="elipseVerte" cx="90" cy="90" rx="90" ry="17" />
+                <ellipse class="elipseVerte" cx="90" cy="90" rx="17" ry="90" />
+            </g>
+        </defs>
+        <use xlink:href="#laForme" />
     </svg>
 </body>
 
